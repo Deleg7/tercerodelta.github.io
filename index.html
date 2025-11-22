@@ -1,88 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Recuerdo Tercero Delta</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuerdos del Curso</title>
 
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #111;
-        color: #fff;
-    }
+    <style>
+        body {
+            margin: 0;
+            font-family: "Arial", sans-serif;
+            background: linear-gradient(to bottom, #cfe9ff, #9ac9f9);
+            color: #03396c;
+        }
 
-    header {
-        background: linear-gradient(135deg, #0d6efd, #6610f2);
-        padding: 60px 20px;
-        text-align: center;
-        color: white;
-    }
+        header {
+            background: rgba(3, 57, 108, 0.85);
+            color: white;
+            padding: 25px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            border-bottom: 4px solid #5fa8d3;
+        }
 
-    header h1 {
-        font-size: 40px;
-        margin-bottom: 15px;
-    }
+        .container {
+            width: 92%;
+            max-width: 950px;
+            margin: auto;
+            margin-top: 30px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
 
-    header p {
-        font-size: 18px;
-        opacity: 0.9;
-    }
+        h2 {
+            text-align: center;
+            margin-top: 40px;
+            color: #03396c;
+            text-shadow: 1px 1px 0 white;
+        }
 
-    .gallery {
-        width: 90%;
-        max-width: 1000px;
-        margin: auto;
-        margin-top: 40px;
-    }
+        /* GALERÍA */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 12px;
+            margin-top: 20px;
+            padding: 10px;
+        }
 
-    .item {
-        background: #222;
-        margin-bottom: 40px;
-        border-radius: 12px;
-        padding: 15px;
-        box-shadow: 0 0 10px #000;
-    }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            border: 3px solid #5fa8d3;
+            object-fit: cover;
+            transition: transform 0.2s;
+        }
 
-    img, video {
-        width: 100%;
-        border-radius: 12px;
-        margin-top: 10px;
-    }
-</style>
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* VIDEO */
+        .video-box {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        video {
+            width: 100%;
+            max-width: 850px;
+            border-radius: 12px;
+            border: 4px solid #5fa8d3;
+            background: #03396c;
+        }
+
+        /* BOTONES */
+        .btn-box {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 22px;
+            margin: 10px;
+            background: #03396c;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 17px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background: #075c97;
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Recuerdo de 3ero Delta</h1>
-    <p>Nuestro último año juntos • Gracias por cada momento, buen viento buena mar </p>
-</header>
+    <header>🌊 RECUERDOS DEL CURSO 🌊</header>
 
-<div class="gallery">
+    <div class="container">
 
-    <!-- EJEMPLO FOTO 1 -->
-    <div class="item">
-        <h2>Primer día de clases</h2>
-        <img src="foto1.jpg" alt="Foto del curso">
+        <h2>📸 Galería del Recuerdo</h2>
+        <div class="gallery">
+            <img src="image.png">
+            <img src="image (1).png">
+            <img src="image (2).png">
+            <img src="image (3).png">
+            <img src="image (4).png">
+            <img src="image (5).png">
+            <img src="image (6).png">
+            <img src="image (7).png">
+            <img src="image (8).png">
+            <img src="image (9).png">
+            <img src="image (10).png">
+            <img src="image (11).png">
+        </div>
+
+        <h2>🎬 Video Principal</h2>
+        <div class="video-box">
+            <video controls>
+                <source src="WhatsApp Video 2025-11-21 at 23.19.34.mp4" type="video/mp4">
+                Tu navegador no puede reproducir el video.
+            </video>
+        </div>
+
+        <h2>📂 Otros Recuerdos</h2>
+        <div class="btn-box">
+            <a class="btn" href="VIDEO DELTA 1.html" target="_blank">Ver VIDEO DELTA 1</a>
+            <a class="btn" href="VIDEO DELTA 2.html" target="_blank">Ver VIDEO DELTA 2</a>
+        </div>
+
     </div>
-
-    <!-- EJEMPLO FOTO 2 -->
-    <div class="item">
-        <h2>Excursión del curso</h2>
-        <img src="foto2.jpg" alt="Foto">
-    </div>
-
-    <!-- EJEMPLO VIDEO -->
-    <div class="item">
-        <h2>Video recuerdo 🎥</h2>
-        <video controls>
-            <source src="video1.mp4" type="video/mp4">
-            Tu navegador no soporta video.
-        </video>
-    </div>
-
-</div>
 
 </body>
 </html>
